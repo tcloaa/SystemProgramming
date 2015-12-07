@@ -153,7 +153,23 @@ accept<br />
 <p>Will  <code>write(fd, data, 5000)</code>  always send 5000 bytes of data? When can it fail?</p>
 <h2>Q24</h2>
 <p>How does Network Address Translation (NAT) work? </p>
-<h2>Q25</h2>
+<div class="question-container">
+<div class="question">
+<h3>## Q25</h3>
+<a class="pure-button hint-button" href="#" question_id="questionq25choicesuassuminganetworkhasa20mstransmittimebetweenclientandserverhowmuchtimewouldittaketoestablishatcpconnectionu20msu40msu100msu60msanswer60mshintexplanation3wayhandshake">Display Hint</a><a class="pure-button exp-button" href="#" question_id="questionq25choicesuassuminganetworkhasa20mstransmittimebetweenclientandserverhowmuchtimewouldittaketoestablishatcpconnectionu20msu40msu100msu60msanswer60mshintexplanation3wayhandshake">Display Explanation</a><ol type="A">
+<li><a class="pure-button choice" href="#" question_id="questionq25choicesuassuminganetworkhasa20mstransmittimebetweenclientandserverhowmuchtimewouldittaketoestablishatcpconnectionu20msu40msu100msu60msanswer60mshintexplanation3wayhandshake">Assuming a network has a 20ms Transmit Time between Client and Server, how much time would it take to establish a TCP Connection?</a></li>
+<li><a class="pure-button choice" href="#" question_id="questionq25choicesuassuminganetworkhasa20mstransmittimebetweenclientandserverhowmuchtimewouldittaketoestablishatcpconnectionu20msu40msu100msu60msanswer60mshintexplanation3wayhandshake">20 ms</a></li>
+<li><a class="pure-button choice" href="#" question_id="questionq25choicesuassuminganetworkhasa20mstransmittimebetweenclientandserverhowmuchtimewouldittaketoestablishatcpconnectionu20msu40msu100msu60msanswer60mshintexplanation3wayhandshake">40 ms</a></li>
+<li><a class="pure-button choice" href="#" question_id="questionq25choicesuassuminganetworkhasa20mstransmittimebetweenclientandserverhowmuchtimewouldittaketoestablishatcpconnectionu20msu40msu100msu60msanswer60mshintexplanation3wayhandshake">100 ms</a></li>
+<li><a class="pure-button choice" href="#" question_id="questionq25choicesuassuminganetworkhasa20mstransmittimebetweenclientandserverhowmuchtimewouldittaketoestablishatcpconnectionu20msu40msu100msu60msanswer60mshintexplanation3wayhandshake">60 ms</a></li>
+</ol>
+<p id="hintquestionq25choicesuassuminganetworkhasa20mstransmittimebetweenclientandserverhowmuchtimewouldittaketoestablishatcpconnectionu20msu40msu100msu60msanswer60mshintexplanation3wayhandshake"></p>
+<p id="expquestionq25choicesuassuminganetworkhasa20mstransmittimebetweenclientandserverhowmuchtimewouldittaketoestablishatcpconnectionu20msu40msu100msu60msanswer60mshintexplanation3wayhandshake"></p>
+</div>
+</div>
+<script>var questionq25choicesuassuminganetworkhasa20mstransmittimebetweenclientandserverhowmuchtimewouldittaketoestablishatcpconnectionu20msu40msu100msu60msanswer60mshintexplanation3wayhandshake = {question: '## Q25',choices: ['Assuming a network has a 20ms Transmit Time between Client and Server, how much time would it take to establish a TCP Connection?', '20 ms', '40 ms', '100 ms', '60 ms'],answer: '60 ms',hint: '',explanation: '3 Way Handshake '};</script>
+<h2>Q26</h2>
+<p>What are some of the differences between HTTP 1.0 and HTTP 1.1? How many ms will it take to transmit 3 files from server to client if the network has a 20ms transmit time? How does the time taken differ between HTTP 1.0 and HTTP 1.1?</p>
 <h1>Coding questions</h1>
 <h2>Q 2.1</h2>
 <p>Writing to a network socket may not send all of the bytes and may be interrupted due to a signal. Check the return value of <code>write</code> to implement <code>write_all</code> that will repeatedly call <code>write</code> with any remaining data. If <code>write</code> returns -1 then immediately return -1 unless the <code>errno</code> is <code>EINTR</code> - in which case repeat the last <code>write</code> attempt. You will need to use pointer arithmetic.</p>
