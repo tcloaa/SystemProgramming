@@ -144,13 +144,16 @@ accept<br />
 <h2>Q19</h2>
 <p>Which network call specifies the size of the allowed backlog?</p>
 <h2>Q20</h2>
-<p>Which network call returns a new filedescriptor?</p>
+<p>Which network call returns a new file descriptor?</p>
 <h2>Q21</h2>
 <p>When are passive sockets used?</p>
 <h2>Q22</h2>
 <p>When is epoll a better choice than select? When is select a better choice than epoll?</p>
 <h2>Q23</h2>
 <p>Will  <code>write(fd, data, 5000)</code>  always send 5000 bytes of data? When can it fail?</p>
+<h2>Q24</h2>
+<p>How does Network Address Translation (NAT) work? </p>
+<h2>Q25</h2>
 <h1>Coding questions</h1>
 <h2>Q 2.1</h2>
 <p>Writing to a network socket may not send all of the bytes and may be interrupted due to a signal. Check the return value of <code>write</code> to implement <code>write_all</code> that will repeatedly call <code>write</code> with any remaining data. If <code>write</code> returns -1 then immediately return -1 unless the <code>errno</code> is <code>EINTR</code> - in which case repeat the last <code>write</code> attempt. You will need to use pointer arithmetic.</p>
