@@ -83,12 +83,14 @@ No pre-emption<br />
 Mutual exclusion</p>
 <h2>Q3</h2>
 <p>Identify when Dining Philosophers code causes a deadlock (or not). For example, if you saw the following code snippet which Coffman condition is not satisfied?</p>
-<p>// Get both locks or none.<br />
-pthread_mutex_lock( a );<br />
-if( pthread_mutex_trylock( b ) ) { /<em>failed</em>/<br />
-   pthread_mutex_unlock( a );<br />
-   ...<br />
-}</p>
+<pre class="highlight"><code>// Get both locks or none.
+pthread_mutex_lock( a );
+if( pthread_mutex_trylock( b ) ) { /*failed*/
+   pthread_mutex_unlock( a );
+   ...
+}</code></pre>
+
+
 <h2>Q4</h2>
 <p>How many processes are blocked?</p>
 <p>P1 acquires R1<br />
