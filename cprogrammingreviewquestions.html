@@ -122,9 +122,9 @@ void func() {
 
 <h2>Q 1.5</h2>
 <p>Which of the following is legal?</p>
-<pre class="highlight"><code class="language-C">char a[] = &quot;Hello&quot;; strcpy(&quot;World&quot;, a);
-char b[] = &quot;Hello&quot;; strcpy(&quot;World12345&quot;, b);
-char* c = &quot;Hello&quot;; strcpy(&quot;World&quot;, c);</code></pre>
+<pre class="highlight"><code class="language-C">char a[] = &quot;Hello&quot;; strcpy(a, &quot;World&quot;);
+char b[] = &quot;Hello&quot;; strcpy(b, &quot;World12345&quot;, b);
+char* c = &quot;Hello&quot;; strcpy(c, &quot;World&quot;);</code></pre>
 
 
 <h2>Q 1.6</h2>
