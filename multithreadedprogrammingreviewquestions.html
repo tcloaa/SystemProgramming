@@ -111,7 +111,7 @@ int main(int argv, char**argc) {
 
 
 <h2>Q4</h2>
-<p>Complete the following code. The following code is supposed to print alternating <code>A</code> and <code>B</code>. It represents two threads that take turns to execute.  Add condition variable calls to <code>func</code> so that the waiting thread does not need to continually check the <code>turn</code> variable. Hint: Why is cond_broadcast necessary?</p>
+<p>Complete the following code. The following code is supposed to print alternating <code>A</code> and <code>B</code>. It represents two threads that take turns to execute.  Add condition variable calls to <code>func</code> so that the waiting thread does not need to continually check the <code>turn</code> variable. Q: Is pthread_cond_broadcast necessary or is pthread_cond_signal sufficient?</p>
 <pre class="highlight"><code class="language-C">pthread_cond_t cv = PTHREAD_COND_INITIALIZER;
 pthread_mutex_t m = PTHREAD_MUTEX_INITIALIZER;
 
