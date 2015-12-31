@@ -68,7 +68,10 @@
             <h3>Forking, Part 2: Fork, Exec, Wait</h3>
 
 <h2>What does the following 'exec' example do?</h2>
-<pre class="highlight"><code class="language-C">int main() {
+<pre class="highlight"><code class="language-C">#include &amp;lt;unistd.h&amp;gt;
+#include &amp;lt;fcntl.h&amp;gt; // O_CREAT, O_APPEND etc. defined here
+
+int main() {
    close(1); // close standard out
    open(&quot;log.txt&quot;, O_RDWR | O_CREAT | O_APPEND, S_IRUSR | S_IWUSR);
    puts(&quot;Captain's log&quot;);
