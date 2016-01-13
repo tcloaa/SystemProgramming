@@ -142,17 +142,17 @@ read(0, buffer, sizeof(buffer));</code></pre>
   }</code><br />
   If the address of data is 0x7fbd9d40, then what is the address of data+2?</li>
 <li>What is data[3] equivalent to in C?</li>
-<li>sizeof character arrays, incrementing pointers<br />
-  Remember the type of a string constant "abc" is an array.</li>
-<li>Why does this segfault?<br />
+<li>sizeof character arrays, incrementing pointers</li>
+</ul>
+<p>Remember the type of a string constant "abc" is an array.<br />
+  - Why does this segfault?<br />
 <code>C
   char *ptr = "hello";
-  *ptr = 'J';</code></li>
-<li>What does sizeof("Hello\0World") return?</li>
-<li>What does strlen("Hello\0World") return?</li>
-<li>Give an example of X such that <code>sizeof(X)</code> is 3</li>
-<li>Give an example of Y such at sizeof(Y) might be 4 or 8 depending on the machine.</li>
-</ul>
+  *ptr = 'J';</code><br />
+  - What does sizeof("Hello\0World") return?<br />
+  - What does strlen("Hello\0World") return?<br />
+  - Give an example of X such that <code>sizeof(X)</code> is 3<br />
+  - Give an example of Y such at sizeof(Y) might be 4 or 8 depending on the machine.</p>
 <h3>Chapter 3</h3>
 <ul>
 <li>Program arguments argc argv</li>
