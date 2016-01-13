@@ -67,15 +67,47 @@
             </div>
             <h3>HW0</h3>
 
-<h2>Answer These Questions As You Watch These Videos: <a href="http://cs-education.github.io/sys/">http://cs-education.github.io/sys/</a></h2>
+<h1>Welcome!</h1>
+<pre class="highlight"><code class="language-C">// First can you guess which lyrics have been transformed into this C-like system code?
+char q[] = &quot;Do you wanna build a C99 program?&quot;;
+#define or &quot;go debugging with gdb?&quot;
+static unsigned int i = sizeof(or) != strlen(or);
+char* ptr = &quot;lathe&quot;; size_t come = fprintf(stdout,&quot;%s door&quot;, ptr+2);
+int away = ! (int) * &quot;&quot;;
+
+int* shared = mmap(NULL, sizeof(int*), PROT_READ | PROT_WRITE, MAP_SHARED | MAP_ANONYMOUS, -1, 0);
+munmap(shared,sizeof(int*));
+
+if(!fork()) { execlp(&quot;man&quot;,&quot;man&quot;,&quot;-3&quot;,&quot;ftell&quot;, (char*)0); perror(&quot;failed&quot;); }
+if(!fork()) { execlp(&quot;make&quot;,&quot;make&quot;, &quot;snowman&quot;, (char*)0); execlp(&quot;make&quot;,&quot;make&quot;, (char*)0)); }
+
+exit(0);</code></pre>
+
+
+<h1>So you want to master System Programming?</h1>
+<pre class="highlight"><code class="language-C">puts(&quot;Bring your near-completed answers the problems below to the first lab to show that you've been working on this&quot;);
+printf(&quot;A few \&quot;don't knows\&quot; or \&quot;unsure\&quot; is fine for lab 1&quot;); 
+fprintf(stdout,&quot;the point is that this homework is a stepping stone to all future assignments&quot;);
+char p[] = &quot;so you will want to clear up any confusions or misconceptions.&quot;;
+write(1, p, strlen(p) );
+char buffer[1024];
+sprintf(buffer,&quot;For grading purposes it will be graded as part of your lab %d work.&quot;, 1);
+write(1, buffer, strlen(buffer));
+printf(&quot;Press Return to continue\n&quot;);
+read(0, buffer, sizeof(buffer));</code></pre>
+
+
+<h2>Watch the videos and write up your answers to the following questions.</h2>
+<p><a href="http://cs-education.github.io/sys/">http://cs-education.github.io/sys/</a></p>
+<p>The in-browser virtual machine runs entirely in Javascript and is fastest in Chrome. Note the VM and any code you write is reset when you reload the page <em>So copy your code to a separate document</em></p>
 <h3>Chapter 1</h3>
 <ul>
 <li>Hello World (System call style)</li>
-<li>Write me a program that uses write() to print out "Hi! My name is &lt;Your Name&gt;".</li>
+<li>Write a program that uses write() to print out "Hi! My name is &lt;Your Name&gt;".</li>
 <li>Hello Standard Error Stream</li>
-<li>Write me a program that uses write() to prints out a triangle of height n to Standard Error<ul>
+<li>Write a program that uses write() to prints out a triangle of height n to Standard Error<ul>
 <li>n should be a variable and the triangle should look like this for n = 3<br />
-```<br />
+```C<br />
 <em><br />
 </em>*</li>
 </ul>
@@ -106,13 +138,16 @@
   }</code><br />
   If the address of data is 0x7fbd9d40, then what is the address of data+2?</li>
 <li>What is data[3] equivalent to in C?</li>
-<li>sizeof character arrays, incrementing pointers</li>
+<li>sizeof character arrays, incrementing pointers<br />
+  Remember the type of a string constant "abc" is an array.</li>
 <li>Why does this segfault?<br />
 <code>C
   char *ptr = "hello";
   *ptr = 'J';</code></li>
 <li>What does sizeof("Hello\0World") return?</li>
 <li>What does strlen("Hello\0World") return?</li>
+<li>Give an example of X such that <code>sizeof(X)</code> is 3</li>
+<li>Give an example of Y such at sizeof(Y) might be 4 or 8 depending on the machine.</li>
 </ul>
 <h3>Chapter 3</h3>
 <ul>
@@ -163,13 +198,21 @@
 <h3>Chapter 5</h3>
 <ul>
 <li>Reading characters, Trouble with gets</li>
-<li>What functions can be used for getting characters for stdin and writing them to stdout?</li>
+<li>What functions can be used for getting characters for <code>stdin</code> and writing them to <code>stdout</code>?</li>
 <li>Name one issue with gets()</li>
 <li>Introducing sscanf and friends</li>
 <li>Write me code that takes the string "Hello 5 World" and break it up into 3 parts ("Hello", 5, "World")</li>
-<li>getline is useful</li>
-<li>What does one need to define before using getline()?</li>
-<li>Write me a C program to print out the content of a file line by line using getline()</li>
+<li><code>getline</code> is useful</li>
+<li>What does one need to define before using <code>getline()</code>?</li>
+<li>Write a C program to print out the content of a file line by line using <code>getline()</code></li>
+</ul>
+<h3>C Development (A web search is useful here)</h3>
+<ul>
+<li>What compiler flag is used to generate a debug build?</li>
+<li>You modify the makefile to generate debug builds and type 'make' again. Explain why this is insufficient to generate a new build.</li>
+<li>Are tabs or spaces used in Makefiles?</li>
+<li>What are the differences between heap and stack memory?</li>
+<li>Are there other kinds of memory in a process?</li>
 </ul>          </div>
         </div>
       </main>
